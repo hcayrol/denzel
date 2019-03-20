@@ -1,5 +1,30 @@
 # DENZEL
 
+
+
+project finished:
+
+
+run with nodejs app.js. the REST and GRAPHQL api will perform. let the api connected.
+then use postman or a browser and go to this url:
+localhost:9292/movie/populate
+
+you will see that the mongodb database will be full with 56 movies where Denzel Washington was actor! now, run
+localhost:9292/movie/"the id of the film you want"
+and you will see his caracteritics. By the way, do not hesitate to go to 
+localhost:9292/movies  in order to be able to see attributes of a random must-watch movie!
+all the others endpoints are implemented. do not hesitate to ckeck the code to analyze all the possibilities you have, you 
+can also add a date and a review by going on postman, select post request, insert
+localhost:9292/movie/"the id of the film you want" and in the body, fill date and review like this : {"date": "date you want", "review": "review you want"}
+you can see the change by doing a new get request.
+
+you want a smarter solution? go on localhost:9292/graphql and admire graphiql!
+
+Check the code to see the possibilities you may have! thanks to app.js connected to GRAPHQL server, you can populate, findMovie...exactly the same as you can do 
+with URL but with just one word!
+
+
+
 > The must-watch Denzel's movies
 
 ![denzel](https://m.media-amazon.com/images/M/MV5BMjE5NDU2Mzc3MV5BMl5BanBnXkFtZTcwNjAwNTE5OQ@@._V1_SY1000_SX750_AL_.jpg)
@@ -273,3 +298,5 @@ Each time, we open the web application or refresh the page, fetch a random **mus
 ## Licence
 
 [Uncopyrighted](http://zenhabits.net/uncopyright/)
+
+
